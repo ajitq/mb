@@ -90,3 +90,5 @@ spacy.util.set_data_path('e:/spacy/models')
 nlp = spacy.load('en')
 
 parva1 = nlp(book.parvas[1].text())
+nes = [x for x in parva1.noun_chunks]
+
